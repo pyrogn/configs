@@ -1,3 +1,26 @@
 #!/usr/bin/env bash
-ARGS="$@"
-python3 -m http.server ${ARGS} 2>/dev/null &
+port=5789 
+local_ip=$(ipconfig getifaddr en0)
+
+echo "sharing $(pwd) on http.server"
+echo "connect to http://$local_ip:$port"
+echo "or locally http://localhost:$port"
+
+ARGS="$@" # do you really need it?
+python3 -m http.server $port ${ARGS} 2>/dev/null &
+
+server_pid=$!
+
+stop_server() {
+    echo "Stopping server..."
+    kill $server_pid
+    wait $server_pid 2>/dev/null
+    echo "Server stopped."
+    exit 0
+}
+
+# Trap Ctrl+C (SIGINT) and call the stop_server function
+trap stop_server SIGINT
+
+# Wait for the server process to finish (in case it stops on its own)
+wait $server_pid
