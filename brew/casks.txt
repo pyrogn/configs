@@ -1,0 +1,11 @@
+calibre
+dbeaver-community
+drawio
+font-sf-mono-nerd-font
+iina
+iterm2
+julia
+karabiner-elements
+qbittorrent
+utm
+zotero
