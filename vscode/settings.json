@@ -1,0 +1,110 @@
+{
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.inheritEnv": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "jupyter.askForKernelRestart": false,
+    "gcode.general.hovers.enabled": false,
+    "explorer.confirmDelete": false,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "workbench.settings.applyToAllProfiles": [
+    ],
+
+    "redhat.telemetry.enabled": false,
+    "git.enableSmartCommit": true,
+
+        // See the VIM extension docs for more details
+        "vim.leader": "<space>",
+        "vim.sneak": true,
+        "vim.incsearch": true,
+        "vim.useSystemClipboard": true,
+        "vim.useCtrlKeys": true,
+        "vim.hlsearch": true,
+        "vim.visualModeKeyBindingsNonRecursive": [
+          {
+            // By default, "p" in visual mode will copy whatever text was replaced. To prevent this, after pasting, select the newly replaced text and copy it.
+            "before": [
+              "p"
+            ],
+            "after": [
+              "p",
+              "g",
+              "v",
+              "y"
+            ]
+          },
+          // Bind > and < in visual mode to indent/outdent lines (repeatable)
+          {
+            "before": [
+              ">"
+            ],
+            "commands": [
+              "editor.action.indentLines"
+            ]
+          },
+          {
+            "before": [
+              "<"
+            ],
+            "commands": [
+              "editor.action.outdentLines"
+            ]
+          }
+        ],
+        "vim.normalModeKeyBindingsNonRecursive": [
+          // Turn off VIM's search highlighting
+          {
+            "before": [
+              "<leader>",
+              "s",
+              "h"
+            ],
+            "commands": [
+              ":nohl"
+            ]
+          },
+        ],
+        // to make jupyter notebooks a bit slimmer
+        "notebook.cellToolbarLocation": {
+          "default": "hidden"
+        },
+        "breadcrumbs.enabled": false,
+        "notebook.formatOnSave.enabled": true,
+        "notebook.insertToolbarLocation": "notebookToolbar",
+        "notebook.showCellStatusBar": "hidden",
+
+        "debug.javascript.defaultRuntimeExecutable": {
+          "disable-color-correct-rendering": false,
+          "pwa-node": "node"
+        },
+        "terminal.integrated.commandsToSkipShell": [
+          "language-julia.interrupt"
+        ],
+        "code-runner.saveFileBeforeRun": true,
+        "workbench.startupEditor": "none",
+        "[html]": {
+          "editor.defaultFormatter": "vscode.html-language-features"
+        },
+        "[rust]": {
+          "editor.defaultFormatter": "rust-lang.rust-analyzer",
+          "editor.formatOnSave": true
+        },
+        "julia.symbolCacheDownload": true,
+        "julia.enableTelemetry": false,
+        "[julia]": {
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "julialang.language-julia"
+      },
+        "notebook.output.scrolling": true,
+}
+
