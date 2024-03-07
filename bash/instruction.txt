@@ -1,0 +1,5 @@
+add this to ~/.zshrc
+
+# custom scripts and cli tools
+source "$HOME/bash_functions"
+export PATH="$PATH:$HOME/bash_tools/"
