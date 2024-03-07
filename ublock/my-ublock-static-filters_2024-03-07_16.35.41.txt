@@ -1,0 +1,18 @@
+! https://www.youtube.com
+www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
+www.youtube.com##.ytd-rich-section-renderer.style-scope > .ytd-rich-shelf-renderer.style-scope
+
+! 2023-10-28 https://web.telegram.org
+web.telegram.org##.has-stories.avatar-54.avatar-like.avatar
+web.telegram.org##.stories-list
+
+! 2023-11-17 https://habr.com
+habr.com##.tm-block_spacing-around.tm-stories-block.tm-block
+
+! all stack websites
+*###hot-network-questions
+*##.tex2jax_ignore.module
+*##.mb16.s-anchors__grayscale.s-anchors.s-sidebarwidget__yellow.s-sidebarwidget
+*##.is-visible.js-notice-sidebar-popover.p0.bc-orange-400.btw3.bt.baw0.h\:bs-lg.bs-sm.bar-md.s-card.ws2.sm\:d-none.s-popover
+*##.module.mb16.s-sidebarwidget
+
