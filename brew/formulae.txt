@@ -20,3 +20,4 @@ trash-cli
 tree
 wget
 rar
+ncdu
