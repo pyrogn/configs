@@ -6,7 +6,9 @@ alias lola='git log --graph --decorate --pretty=oneline --abbrev-commit --all'
 # brew install coreutils for this one
 alias l='gls --color -lhF --group-directories-first'
 alias lt='du -sh * | sort -h'
-alias lth='du -sh * .* | sort -h'
+alias lth='du -sh * .* | sort -h' # can be broken, if there are no hidden files
+# but better just to use ncdu, it's much nicer and faster
+
 alias count='find . -type f | wc -l'
 # alias ve='python3 -m venv .venv'
 # alias va='source .venv/bin/activate'
@@ -24,6 +26,10 @@ function cl() {
     l
 	# ls -F --color=auto
 }
+
+# I use this also, quite handy
+# md='mkdir -p'
+# rd=rmdir
 
 
 # from oh my zsh, take what you like
@@ -255,3 +261,4 @@ function cl() {
 # rd=rmdir
 # run-help=man
 # which-command=whence
+

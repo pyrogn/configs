@@ -21,3 +21,4 @@ tree
 wget
 rar
 ncdu
+coreutils
