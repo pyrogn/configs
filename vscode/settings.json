@@ -22,7 +22,11 @@
 
     "redhat.telemetry.enabled": false,
     "git.enableSmartCommit": true,
+    
+    // look also here
+    // https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/elevating-your-worflow-with-custom-mappings/
 
+    // this config is from here https://vimsheet.com/ 
         // See the VIM extension docs for more details
         "vim.leader": "<space>",
         "vim.sneak": true,
@@ -74,6 +78,7 @@
             ]
           },
         ],
+
         // to make jupyter notebooks a bit slimmer
         "notebook.cellToolbarLocation": {
           "default": "hidden"
