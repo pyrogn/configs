@@ -27,6 +27,8 @@ function cl() {
 	# ls -F --color=auto
 }
 
+alias ve='. .venv/bin/activate'
+
 # I use this also, quite handy
 # md='mkdir -p'
 # rd=rmdir
