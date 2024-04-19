@@ -111,5 +111,9 @@
           "editor.defaultFormatter": "julialang.language-julia"
       },
         "notebook.output.scrolling": true,
+        "remote.SSH.remotePlatform": {
+          "51.250.19.218": "linux"
+        },
+        "editor.accessibilitySupport": "off",
 }
 
