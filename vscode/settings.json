@@ -3,10 +3,22 @@
     "explorer.confirmDragAndDrop": false,
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.inheritEnv": false,
+    
+    // linters, formatters
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnSave": true
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+      },
+      "editor.defaultFormatter": "charliermarsh.ruff"
     },
+    "notebook.formatOnSave.enabled": true,
+    "notebook.codeActionsOnSave": {
+      "notebook.source.fixAll": "explicit",
+      "notebook.source.organizeImports": "explicit"
+    },
+
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
@@ -84,7 +96,6 @@
           "default": "hidden"
         },
         "breadcrumbs.enabled": false,
-        "notebook.formatOnSave.enabled": true,
         "notebook.insertToolbarLocation": "notebookToolbar",
         "notebook.showCellStatusBar": "hidden",
 
