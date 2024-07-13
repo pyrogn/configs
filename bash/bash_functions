@@ -26,4 +26,5 @@ function cl() {
 }
 
 alias ve='. .venv/bin/activate'
+alias de='deactivate'
 

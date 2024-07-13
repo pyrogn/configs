@@ -78,7 +78,7 @@ ZSH_THEME=""
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions docker colored-man-pages z thefuck ripgrep python tmux)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions docker docker-compose colored-man-pages z thefuck ripgrep python tmux)
 # also useful: tmux dotenv extract
 # somewhat useful: brew macos 
 
@@ -169,3 +169,4 @@ source "$HOME/bash_functions"
 export PATH="$PATH:$HOME/bash_tools/"
 
 eval "$(fzf --zsh)"
+. "$HOME/.cargo/env"

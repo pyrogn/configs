@@ -9,14 +9,14 @@
       "editor.formatOnSave": true,
       "editor.codeActionsOnSave": {
         "source.fixAll": "explicit",
-        "source.organizeImports": "explicit"
+        // "source.organizeImports": "explicit"
       },
       "editor.defaultFormatter": "charliermarsh.ruff"
     },
     "notebook.formatOnSave.enabled": true,
     "notebook.codeActionsOnSave": {
       "notebook.source.fixAll": "explicit",
-      "notebook.source.organizeImports": "explicit"
+      // "notebook.source.organizeImports": "explicit"
     },
 
     "[markdown]": {
@@ -126,5 +126,7 @@
           "51.250.19.218": "linux"
         },
         "editor.accessibilitySupport": "off",
+        "diffEditor.ignoreTrimWhitespace": true,
+        "editor.unicodeHighlight.ambiguousCharacters": false,
 }
 
